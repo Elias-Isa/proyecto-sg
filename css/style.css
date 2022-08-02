@@ -6,41 +6,33 @@
 }
 
 /*-------HEADER-------*/
-
-header {
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ----Barra de navegación---- */
+header nav {
+    background-color: black;
 }
 
-header .logoPrincipal {
+header nav div div {
+    justify-content: flex-end;
+}
+
+header nav div a img {
     width: 130px;
     height: 130px;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 15px 15px 0px 15px;
-}
-
-header nav ul li a {
+.nav-item a {
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
+    color: white;
     font-weight: 200;
+    font-size: 18px;
     transition: 1s;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+.nav-item a:hover {
     color: red;
 }
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -90,6 +82,40 @@ body {
 }
 
 .hero div a:hover {
+    background-color: rgb(209, 75, 75);
+    color: white;
+}
+
+/* ----Seccion especial---- */
+.cardEsp {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.cardEsp img{
+    width: 350px;
+}
+
+.cardBody {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.buttomClass {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.buttomClass:hover {
     background-color: rgb(209, 75, 75);
     color: white;
 }
@@ -417,39 +443,21 @@ body {
     text-align: center;
 }
 
-/* ----Segunda sección---- */
-.seccionServicio {
-    background-color: rgba(0, 0, 0, 0.925);
-    color: whitesmoke;
+
+/* ----Acordeon---- */
+.accordionButton {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
-}
-
-.contenedorServicio {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 30px 10px 30px;
-}
-
-/* ----Titulo seccion 2---- */
-.seccionServicio h2 {
-    font-size: 39px;
-    font-weight: 200;
-    text-align: center;
-}
-
-/* ----Párrafos servicios---- */
-.contenedorServicio > div {
-    width: 40%;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: justify;
-}
-
-.contenedorServicio div p {
-    margin-top: 5px;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.925);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
 }
 
 /* ----Sección 3---- */
@@ -537,7 +545,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
 }
 
 /* ----Lista del footer---- */
@@ -568,7 +575,7 @@ footer .sublogo {
 /* ----Responsive max-width---- */
 /* ------INDEX------ */
 /* -----Header----- */
-@media screen and (max-width:713px) {
+/* @media screen and (max-width:713px) {
     header {
         flex-direction: column;
         padding: 10;
@@ -581,7 +588,7 @@ footer .sublogo {
         text-align: center;
         padding: 15px;
     }
-}
+} */
 
 /* -----MAIN----- */
 @media screen and (max-width:707px) {
@@ -592,6 +599,19 @@ footer .sublogo {
     }
 }
 
+/* ----Section 1---- */
+@media screen and (max-width:673px){
+    .cardEsp {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:673px){
+    .cardBody {
+        text-align: center;
+    }
+}
 /* ----Section 2---- */
 @media screen and (max-width:1281px) {
     .gridContainer {
@@ -616,12 +636,6 @@ footer .sublogo {
 @media screen and (max-width:740px) {
     .botonFixed {
         display: none;
-    }
-}
-
-@media screen and (max-width:394px){
-    footer {
-        height: 270px;
     }
 }
 
@@ -707,12 +721,6 @@ footer .sublogo {
 }
 
 /* --Titulo 2-- */
-@media screen and (max-width:674px){
-    .seccionServicio h2 {
-        margin: 5px;
-    }
-}
-
 @media screen and (max-width:588px){
     .seccionServicio h2 {
         text-align: center;

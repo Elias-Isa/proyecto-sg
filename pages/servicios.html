@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Supremacy Gaming</title>
 </head>
@@ -12,15 +16,33 @@
 <body>
     <header>
         <!-- Barra de navegación -->
-        <img class="logoPrincipal" src="../img/logoprincipal.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logoprincipal.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sobrenosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Info principal  -->
@@ -34,20 +56,49 @@
         </section>
         <!-- Segunda sección -->
         <section class="seccionServicio">
-            <h2>¿Qué queremos decir con servicios de mantenimiento y en que los beneficia a nuestros clientes?</h2>
-            <div class="contenedorServicio">
-                <div>
-                    <p>Ofrecemos un servicio de mantenimiento para las PCS de nuestros clientes en el caso de que lo
-                    requieran.</p>
-                    <p>Contamos con un equipo capacitado para solucionar sus problemas y dar lo mejor de
-                    nuestras capacidades.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordionItem">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordionButton collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿A qué clase de servicios hacen referencia?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Ofrecemos un servicio de mantenimiento para las PCS de nuestros clientes en el caso de que lo requieran.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>Sabemos lo tedioso y complicado a la hora de realizar un mantenimiento efectivo en una pc por eso
-                    mismo es un gran beneficio para aquellos clientes que no dispongan de ayuda para el
-                    mantenimiento de sus PCS.</p>
-                    <p>Contamos con una atención de 12 horas diarias y respuesta
-                    inmediata por parte del personal de la tienda.</p>
+                <div class="accordionItem">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordionButton collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            En caso de requerir de sus servicios ¿Quiénes serían los encargados de realizar dicha tarea?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>En nuestra tienda contamos con un equipo más que capacitado para dar lo mejor de nosotros mismos y solucionar sus problemas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordionButton collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            ¿Por qué decidieron realizar servicios de mantenimiento a sus clientes?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Sabemos lo tedioso y complicado que es realizar un mantenimiento efectivo en una pc, por eso mismo sería un gran beneficio para aquellos clientes que no dispongan de ayuda para el mantenimiento de sus computadoras.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,6 +126,9 @@
             <a href="https://www.youtube.com"><img src="../img/youtube.png" alt="" target="_blank" class="sublogo"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
