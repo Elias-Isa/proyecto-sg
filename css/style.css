@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*-------HEADER-------*/
@@ -287,9 +288,29 @@ body {
     color: white;
 }
 
+/* ----Card oferta---- */
+.card-img-top {
+    width: 350px;
+}
+
+.cardKurama {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.card-title {
+    color: red;
+}
+
 /* ---Todos los productos---- */
 /* ----Titulo---- */
-.todosLosProductos h2 {
+.tituloCard {
     text-align: center;
     color: red;
     padding: 10px;
@@ -517,6 +538,13 @@ body {
     font-weight: 200;
 }
 
+/* ----Redes sociales---- */
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ----Sección 2---- */
 .seccionFinal {
     width: 100%;
@@ -574,22 +602,6 @@ footer .sublogo {
 /* -------MEDIA QUERIES------- */
 /* ----Responsive max-width---- */
 /* ------INDEX------ */
-/* -----Header----- */
-/* @media screen and (max-width:713px) {
-    header {
-        flex-direction: column;
-        padding: 10;
-    }
-}
-
-@media screen and (max-width:667px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-} */
-
 /* -----MAIN----- */
 @media screen and (max-width:707px) {
     .hero {
@@ -657,6 +669,22 @@ footer .sublogo {
     }
 }
 
+@media screen and (max-width:783px){
+    .cardKurama {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardBody {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:355px){
+    .cardKurama img {
+        width: 100%;
+    }
+}
+
 /* ------CONTACTO------ */
 /* ----Como contactarnos---- */
 /* ----Banner---- */
@@ -692,6 +720,24 @@ footer .sublogo {
 @media screen and (max-width:348px){
     .contacto h2 {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width:387px){
+    .banner h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:510px){
+    .mb-3 {
+        margin: 0px !important;
+    }
+}
+
+@media screen and (max-width:438px){
+    .form {
+        margin: 10px;
     }
 }
 
@@ -746,6 +792,12 @@ footer .sublogo {
     .sobreNosotros p {
         text-align: center;
         margin: 15px;
+    }
+}
+
+@media screen and (max-width:468px){
+    .redesSociales {
+        text-align: center;
     }
 }
 
