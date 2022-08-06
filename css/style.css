@@ -611,11 +611,38 @@ footer .sublogo {
     }
 }
 
+@media screen and (max-width:672px){
+    .hero {
+        height: 100%;
+    }
+    .hero div {
+        margin: 20px;
+    }
+}   
+
+@media screen and (max-width:478px){
+    .hero div h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:504px){
+    .hero div p {
+        margin: 5px;
+    }
+}
+
 /* ----Section 1---- */
 @media screen and (max-width:673px){
     .cardEsp {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:350px){
+    .cardEsp img {
+        width: 100%;
     }
 }
 
@@ -627,7 +654,8 @@ footer .sublogo {
 /* ----Section 2---- */
 @media screen and (max-width:1281px) {
     .gridContainer {
-        flex-direction: column;
+        grid-template-columns: 50%;
+        justify-content: center;
     }
 }
 
