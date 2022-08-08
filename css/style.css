@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,300;1,400&family=Raleway:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 /*-------HEADER-------*/
 /* ----Barra de navegación---- */
 header nav {
@@ -9,11 +18,12 @@ header nav {
   header nav div {
     justify-content: flex-end; }
 
-header .nav-item a:hover {
+header .nav-item a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: white;
   font-weight: 200;
   font-size: 18px;
-  transition: 1s;
-  color: red; }
+  transition: 1s; }
+  header .nav-item a:hover {
+    color: red; }
