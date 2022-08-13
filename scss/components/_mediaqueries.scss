@@ -1,0 +1,89 @@
+/* -------MEDIA QUERIES------- */
+/* ------INDEX------ */
+/* -----MAIN----- */
+@media screen and (max-width:707px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:672px){
+    .hero {
+        width: 100%;
+        div {
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:478px){
+    .hero {
+        div {
+            h1{
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:504px){
+    .hero {
+        div {
+            p {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+/* ----Section 1---- */
+@media screen and (max-width:673px){
+    .cardEsp {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:350px){
+    .cardEsp {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:673px){
+    .cardBody {
+        text-align: center;
+    }
+}
+
+/* ----Section 2---- */
+@media screen and (max-width:1281px){
+    .gridContainer {
+        grid-template-columns: 50%;
+        justify-content: center;
+    }
+}
+
+/* ---Botón de Whatsapp--- */
+@media screen and (max-width:740px) {
+    .botonFixed {
+        display: none;
+    }
+}
+
+/* -----FOOTER----- */
+@media screen and (max-width:786px){
+    footer {
+        flex-direction: column;
+        padding: 50px;
+        ul {
+            padding: 15px;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

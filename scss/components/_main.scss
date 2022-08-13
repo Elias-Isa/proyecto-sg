@@ -88,7 +88,7 @@
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: 400px;
 }
-
+/* ----Cards---- */
 .gridItems {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +125,7 @@
         border-radius: 5px;
     }
 }
-
+/* ----Logo de seguimiento---- */
 .botonFixed {
     img {
         width: 65px;
