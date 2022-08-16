@@ -1,4 +1,7 @@
 @import "../base/variables";
+@import "../base/maps";
+@import "../base/extends";
+@import "../base/mixins";
 
 /* ------INDEX------ */
 /* ---- Primera sección ---- */
@@ -29,11 +32,6 @@
             font-weight: 200;
         }
         a {
-            text-decoration: none;
-            background-color: $color-botones;
-            color: white;
-            padding: 10px;
-            border-radius: 4px;
             &:hover {
                 background-color: $color-hover;
                 color: white;
@@ -61,12 +59,12 @@
     padding: 1rem 1rem;
 }
 
-.buttomClass {
-    text-decoration: none;
-    background-color: $color-botones;
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
+.boton {
+    background-color: map-get($boton, bg-boton );
+    border-radius: map-get($boton , borde-boton );
+    color: map-get($boton , color-texto );
+    text-decoration: map-get($boton , decoracion-texto );
+    padding: map-get($boton , padding-boton );
     &:hover {
         background-color: $color-hover;
         color: white;
@@ -117,7 +115,6 @@
     }
     a {
         align-self: center;
-        width: 30%;
         text-decoration: none;
         background-color: $color-botones;
         color: white;
@@ -133,5 +130,312 @@
         position: fixed;
         bottom: 30px;
         right: 30px;
+    }
+}
+
+/* ------PRODUCTOS------ */
+/* ----Banner de la sección---- */
+.ofertaEspecial {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    @include flex (flex, flex-start, center)
+}
+
+/* ----Titulo de la oferta---- */
+.ofertaEspecial {
+    div {
+        width: 40%;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        h1 {
+            font-size: 50px;
+            font-weight: 200;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            margin: 0px 0px 15px 50px;
+        }
+    }
+}
+
+/* ----Segundo banner de la sección---- */
+// Usar extend en esta sección
+.segundaOferta {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/banner5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    @extend %segundaOferta;
+    div {
+        width: 40%;
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        h2 {
+            font-size: 50px;
+            font-weight: 200;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            margin: 0px 0px 15px 50px;
+        }
+    }
+}
+
+/* ----Card oferta---- */
+.card-img-top {
+    width: 350px;
+}
+
+.cardKurama {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+/* ---Todos los productos---- */
+/* ----Titulo---- */
+.tituloCard {
+    text-align: center;
+    color: red;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* ----Contenedor de los productos---- */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+/* ----Cuadro del producto---- */
+.productos div {
+    width: 300px;
+    height: 390px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+    margin: 10px 5px 15px 5px;
+    text-align: center;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.05);
+    }
+    img {
+        width: 300px;
+        height: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    h3 {
+        font-size: 14px;
+        color: black;
+        margin-bottom: 10px;
+    }
+}
+
+.botonCards {
+    text-decoration: map-get($botonCards , decoracion-texto );
+    color: map-get($botonCards , color-texto );
+    background-color: map-get($botonCards , bg-boton );
+    padding: map-get($botonCards , padding-boton );
+    border-radius: map-get($botonCards , borde-boton );
+}
+
+/* ------CONTACTO------ */
+/* ----Banner---- */
+.banner {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 70px;
+        margin: 40px 0px 5px 0px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+/* ----¿Cómo contactarnos?---- */
+.contacto {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h2 {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 200;
+    }
+}
+
+.contenedorContacto {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30px 0px 50px;
+    div {
+        width: 40%;
+        font-size: 18px;
+        font-weight: 200;
+        text-align: justify;
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 300;
+            color: green;
+            font-size: 40px;
+        }
+    }
+}
+
+/* ------SERVICIOS------ */
+/* ----Primera sección---- */
+/* ----Banner---- */
+.servicioBanner {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    div {
+        width: 100%;
+        h1 {
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 70px;
+            margin: 10px;
+            text-align: center;
+        }
+    }
+}
+
+/* ----Acordeon---- */
+.accordionButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.925);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+}
+
+/* ----Sección 3---- */
+.infoRedesSociales {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        margin: 30px;
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 200;
+        }
+    }
+}
+
+/* ------SOBRE NOSOTROS------ */
+/* ----Banner---- */
+.sobreNosotros {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+/* ----Sección sobre nosotros---- */
+.infoSobreNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            text-align: center;
+            margin: 20px;
+        }
+        p {
+            margin: 10px;
+            font-size: 20px;
+            text-align: justify;
+            font-weight: 200;
+        }
+    }
+}
+
+/* ----Redes sociales---- */
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----Sección 2---- */
+.seccionFinal {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner2.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 50px;
+        font-weight: 200;
+        margin-top: 20px;
+        text-align: center;
     }
 }

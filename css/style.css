@@ -28,6 +28,16 @@ header .nav-item a {
   header .nav-item a:hover {
     color: red; }
 
+.segundaOferta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.segundaOferta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
 /* ------INDEX------ */
 /* ---- Primera sección ---- */
 .hero {
@@ -54,15 +64,9 @@ header .nav-item a {
       margin: 0px 0px 15px 0px;
       line-height: 40px;
       font-weight: 200; }
-    .hero div a {
-      text-decoration: none;
-      background-color: red;
-      color: white;
-      padding: 10px;
-      border-radius: 4px; }
-      .hero div a:hover {
-        background-color: #d14b4b;
-        color: white; }
+    .hero div a:hover {
+      background-color: #d14b4b;
+      color: white; }
 
 /* ---- Segunda sección ---- */
 .cardEsp {
@@ -81,13 +85,13 @@ header .nav-item a {
   flex: 1 1 auto;
   padding: 1rem 1rem; }
 
-.buttomClass {
-  text-decoration: none;
+.boton {
   background-color: red;
+  border-radius: 4px;
   color: white;
-  padding: 10px;
-  border-radius: 4px; }
-  .buttomClass:hover {
+  text-decoration: none;
+  padding: 10px; }
+  .boton:hover {
     background-color: #d14b4b;
     color: white; }
 
@@ -129,7 +133,6 @@ header .nav-item a {
     color: black; }
   .gridItems a {
     align-self: center;
-    width: 30%;
     text-decoration: none;
     background-color: red;
     color: white;
@@ -143,6 +146,272 @@ header .nav-item a {
   position: fixed;
   bottom: 30px;
   right: 30px; }
+
+/* ------PRODUCTOS------ */
+/* ----Banner de la sección---- */
+.ofertaEspecial {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+/* ----Titulo de la oferta---- */
+.ofertaEspecial div {
+  width: 40%;
+  margin: 20px 0px 20px 0px;
+  text-align: center; }
+  .ofertaEspecial div h1 {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center; }
+  .ofertaEspecial div p {
+    font-size: 18px;
+    margin: 0px 0px 15px 50px; }
+
+/* ----Segundo banner de la sección---- */
+.segundaOferta {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/banner5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
+  .segundaOferta div {
+    width: 40%;
+    margin: 20px 0px 20px 0px;
+    text-align: center; }
+    .segundaOferta div h2 {
+      font-size: 50px;
+      font-weight: 200;
+      text-align: center; }
+    .segundaOferta div p {
+      font-size: 18px;
+      margin: 0px 0px 15px 50px; }
+
+/* ----Card oferta---- */
+.card-img-top {
+  width: 350px; }
+
+.cardKurama {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem; }
+
+/* ---Todos los productos---- */
+/* ----Titulo---- */
+.tituloCard {
+  text-align: center;
+  color: red;
+  padding: 10px;
+  margin: 10px 0px 10px 0px; }
+
+/* ----Contenedor de los productos---- */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%; }
+
+/* ----Cuadro del producto---- */
+.productos div {
+  width: 300px;
+  height: 390px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 15px;
+  border: 1px solid gainsboro;
+  margin: 10px 5px 15px 5px;
+  text-align: center;
+  transition: 1s; }
+  .productos div:hover {
+    transform: scale(1.05); }
+  .productos div img {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+  .productos div h3 {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px; }
+
+.botonCards {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px; }
+
+/* ------CONTACTO------ */
+/* ----Banner---- */
+.banner {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .banner h1 {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 70px;
+    margin: 40px 0px 5px 0px;
+    text-align: center; }
+  .banner p {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center; }
+
+/* ----¿Cómo contactarnos?---- */
+.contacto {
+  background-color: rgba(0, 0, 0, 0.925);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .contacto h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 200; }
+
+.contenedorContacto {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 30px 0px 50px; }
+  .contenedorContacto div {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify; }
+    .contenedorContacto div h2 {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 300;
+      color: green;
+      font-size: 40px; }
+
+/* ------SERVICIOS------ */
+/* ----Primera sección---- */
+/* ----Banner---- */
+.servicioBanner {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; }
+  .servicioBanner div {
+    width: 100%; }
+    .servicioBanner div h1 {
+      font-size: 40px;
+      font-weight: 200;
+      line-height: 70px;
+      margin: 10px;
+      text-align: center; }
+
+/* ----Acordeon---- */
+.accordionButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.925);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none; }
+
+/* ----Sección 3---- */
+.infoRedesSociales {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .infoRedesSociales div {
+    margin: 30px; }
+    .infoRedesSociales div h3 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 200; }
+
+/* ------SOBRE NOSOTROS------ */
+/* ----Banner---- */
+.sobreNosotros {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; }
+
+/* ----Sección sobre nosotros---- */
+.infoSobreNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .infoSobreNosotros div h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px; }
+  .infoSobreNosotros div p {
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 200; }
+
+/* ----Redes sociales---- */
+.redesSociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* ----Sección 2---- */
+.seccionFinal {
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner2.jpg);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .seccionFinal h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center; }
 
 /*-------FOOTER-------*/
 footer {
@@ -216,6 +485,104 @@ footer {
 @media screen and (max-width: 740px) {
   .botonFixed {
     display: none; } }
+
+/* -----PRODUCTOS------ */
+/* -----MAIN----- */
+@media screen and (max-width: 944px) {
+  .ofertaEspecial div {
+    width: 100%; }
+    .ofertaEspecial div p {
+      margin: 15px; }
+  .segundaOferta div {
+    width: 100%; }
+    .segundaOferta div p {
+      margin: 15px; } }
+
+@media screen and (max-width: 783px) {
+  .cardKurama {
+    flex-direction: column;
+    align-items: center; }
+  .cardBody {
+    text-align: center; } }
+
+@media screen and (max-width: 355px) {
+  .cardKurama img {
+    width: 100%; } }
+
+/* ------CONTACTO------ */
+/* ----Como contactarnos---- */
+/* ----Banner---- */
+@media screen and (max-width: 956px) {
+  .banner p {
+    margin: 15px; } }
+
+@media screen and (max-width: 387px) {
+  .banner h1 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 510px) {
+  .mb-3 {
+    margin: 0px !important; } }
+
+@media screen and (max-width: 431px) {
+  .banner h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 892px) {
+  .contenedorContacto {
+    flex-direction: column;
+    align-items: center; }
+    .contenedorContacto div p {
+      margin-bottom: 15px;
+      text-align: center; } }
+
+@media screen and (max-width: 762px) {
+  .contenedorContacto div {
+    width: 100%; } }
+
+@media screen and (max-width: 536px) {
+  .contacto h2 {
+    text-align: center; } }
+
+@media screen and (max-width: 348px) {
+  .contacto h2 {
+    font-size: 30px; } }
+
+/* ------SERVICIOS------ */
+/* ----Seccion 1---- */
+/* --Párrafo-- */
+@media screen and (max-width: 666px) {
+  .servicioBanner div h1 {
+    text-align: center;
+    font-size: 30px; } }
+
+/* --Titulo 3-- */
+@media screen and (max-width: 516px) {
+  .infoRedesSociales h3 {
+    text-align: center;
+    font-size: 28px; } }
+
+/* ------SOBRE NOSOTROS------ */
+@media screen and (max-width: 833px) {
+  .sobreNosotros p {
+    text-align: center;
+    margin: 15px; } }
+
+@media screen and (max-width: 572px) {
+  .infoSobreNosotros div h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 465px) {
+  .infoSobreNosotros div p {
+    font-size: 17px; } }
+
+@media screen and (max-width: 468px) {
+  .redesSociales {
+    text-align: center; } }
+
+@media screen and (max-width: 573px) {
+  .seccionFinal div h2 {
+    font-size: 30px; } }
 
 /* -----FOOTER----- */
 @media screen and (max-width: 786px) {

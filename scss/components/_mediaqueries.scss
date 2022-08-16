@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (max-width:672px){
+@media screen and (max-width:672px) {
     .hero {
         width: 100%;
         div {
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width:478px){
+@media screen and (max-width:478px) {
     .hero {
         div {
             h1{
@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (max-width:504px){
+@media screen and (max-width:504px) {
     .hero {
         div {
             p {
@@ -39,14 +39,14 @@
 }
 
 /* ----Section 1---- */
-@media screen and (max-width:673px){
+@media screen and (max-width:673px) {
     .cardEsp {
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:350px) {
     .cardEsp {
         img {
             width: 100%;
@@ -54,14 +54,14 @@
     }
 }
 
-@media screen and (max-width:673px){
+@media screen and (max-width:673px) {
     .cardBody {
         text-align: center;
     }
 }
 
 /* ----Section 2---- */
-@media screen and (max-width:1281px){
+@media screen and (max-width:1281px) {
     .gridContainer {
         grid-template-columns: 50%;
         justify-content: center;
@@ -75,8 +75,177 @@
     }
 }
 
+/* -----PRODUCTOS------ */
+/* -----MAIN----- */
+@media screen and (max-width:944px) {
+    .ofertaEspecial {
+        div {
+            width: 100%;
+            p {
+                margin: 15px;
+            }
+        }
+    }
+    .segundaOferta {
+        div {
+            width: 100%;
+            p {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:783px) {
+    .cardKurama {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardBody {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .cardKurama img {
+        width: 100%;
+    }
+}
+
+/* ------CONTACTO------ */
+/* ----Como contactarnos---- */
+/* ----Banner---- */
+@media screen and (max-width:956px) {
+    .banner {
+        p {
+            margin: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:387px){
+    .banner h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:510px){
+    .mb-3 {
+        margin: 0px !important;
+    }
+}
+
+@media screen and (max-width:431px){
+    .banner {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:892px) {
+    .contenedorContacto {
+        flex-direction: column;
+        align-items: center;
+        div {
+            p {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:762px) {
+    .contenedorContacto div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .contacto h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:348px) {
+    .contacto h2 {
+        font-size: 30px;
+    }
+}
+
+/* ------SERVICIOS------ */
+/* ----Seccion 1---- */
+/* --Párrafo-- */
+@media screen and (max-width:666px) {
+    .servicioBanner {
+        div {
+            h1 {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/* --Titulo 3-- */
+@media screen and (max-width:516px) {
+    .infoRedesSociales {
+        h3 {
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+}
+
+/* ------SOBRE NOSOTROS------ */
+@media screen and (max-width:833px) {
+    .sobreNosotros {
+        p {
+            text-align: center;
+            margin: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:572px) {
+    .infoSobreNosotros {
+        div {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:465px) {
+    .infoSobreNosotros {
+        div {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    .redesSociales {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:573px) {
+    .seccionFinal {
+        div {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
 /* -----FOOTER----- */
-@media screen and (max-width:786px){
+@media screen and (max-width:786px) {
     footer {
         flex-direction: column;
         padding: 50px;
