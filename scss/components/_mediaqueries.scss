@@ -218,6 +218,16 @@
     }
 }
 
+@media screen and (max-width:535px) {
+    .infoSobreNosotros {
+        div {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:465px) {
     .infoSobreNosotros {
         div {
