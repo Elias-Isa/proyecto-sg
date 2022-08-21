@@ -401,8 +401,8 @@ header .nav-item a {
 /* ----Sección 2---- */
 .seccionFinal {
   width: 100%;
-  height: 40vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner2.jpg);
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.479)), url(../img/banner7.jpg);
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -519,6 +519,18 @@ footer {
   .banner p {
     margin: 15px; } }
 
+@media screen and (max-width: 530px) {
+  .banner h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 444px) {
+  .banner form {
+    margin: 5px; } }
+
+@media screen and (max-width: 422px) {
+  .banner h1 {
+    line-height: normal; } }
+
 @media screen and (max-width: 387px) {
   .banner h1 {
     font-size: 35px; } }
@@ -526,10 +538,6 @@ footer {
 @media screen and (max-width: 510px) {
   .mb-3 {
     margin: 0px !important; } }
-
-@media screen and (max-width: 431px) {
-  .banner h1 {
-    font-size: 40px; } }
 
 @media screen and (max-width: 892px) {
   .contenedorContacto {
@@ -566,11 +574,6 @@ footer {
     font-size: 28px; } }
 
 /* ------SOBRE NOSOTROS------ */
-@media screen and (max-width: 833px) {
-  .sobreNosotros p {
-    text-align: center;
-    margin: 15px; } }
-
 @media screen and (max-width: 572px) {
   .infoSobreNosotros div h1 {
     font-size: 30px; } }
